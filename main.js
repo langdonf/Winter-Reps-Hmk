@@ -89,13 +89,38 @@ if (animal == 'cow'){
 // 1. Make a variable that will hold a person's age. Be semantic.
 var personAge = 17
 // 2. Write code that will print out "Here are the keys", if the age is 16 years or older.
-if (age >= 16){
+if (personAge >= 16){
     console.log("Here are the keys");
 }
 // 3. If the age is younger than 16, a message should print "Sorry, you're too young."
-if (age >= 16){
+if (personAge >= 16){
     console.log("Here are the keys");
 } else {
     console.log("Sorry, you're too young.");
 }
 
+// ## II. Loops
+
+// Remember: **USE `let` when you initialize your for loops!**
+
+// This is GOOD: `for(`**`let i = 0;`**` i < 100; i++)`
+
+// This is NO GOOD: `for(i = 0; i < 100; i++)`
+
+// ### A. The basics
+
+// 1. Write a loop that will print out all the numbers from 0 to 10, inclusive.
+for (let i = 0; i <= 10; i++) {
+    console.log(i);
+}
+// 2. Write a loop that will print out all the numbers from 10 up to and including 400.
+for (let i = 10; i <= 400; i++) {
+    console.log(i);
+}
+// 3. Write a loop that will print out every third number starting with 12 and going no higher than 4000.
+
+for (let i = 12; i <= 4000; i++) {
+    if (i % 3 == 0){
+    console.log(i);
+    }
+}
