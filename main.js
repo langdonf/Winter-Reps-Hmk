@@ -562,14 +562,27 @@ mitchHedbergQuoteGenerator(quotes2)
 // 2. Write in to the object the key-value pairs for `name`, `email`, `age`, and `purchased`. Set the value of `purchased` to an empty array `[]`. Set the other values to whatever you would like.
 
 var user = {
-    name = "Langdon",
-    email = "lfroker@gmail.com",
-    age = 30,
-    purchased = []
+    name: "Langdon",
+    email: "lfroker@gmail.com",
+    age: 30,
+    purchased: []
 };
+
+// ### B. Update the user
+
+// 1. Our user has changed his or her email address. Without changing the original `user` object, update the `email` value to a new email address.
+// 2. Our user has had a birthday! Without changing the original `user` object, increment the `age` value using the postfix operator. Hint: `age++`
 
 user.email = "lfroker@yahoo.com";
 
 user.age++
 
+//### C. Adding keys and values
 
+// You have decided to add your user's location to the data that you want to collect.
+
+// 1. Without changing the original `user` object, add a new key `location` to the object, and give it a value or some-or-other location (a string).
+
+user.location = 'Boat'
+
+console.log(user);
