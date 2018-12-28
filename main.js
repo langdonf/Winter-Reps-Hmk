@@ -446,3 +446,15 @@ function getTwoLengths(str1, str2) {
 }
 
 getTwoLengths("test","testy")
+
+// ### F. `getMultipleLengths`
+
+// Write a function `getMultipleLengths` that accepts a single parameter as an argument: an **array** of **strings**. The function should return an array of **numbers** where each number is the length of the corresponding string.
+
+function getMultipleLengths(arrayOfStrings){
+    arrayOfStrings.forEach(element => {
+        console.log(element.length);
+    });
+}
+
+getMultipleLengths(["hello", "what", "is", "up", "dude"])
