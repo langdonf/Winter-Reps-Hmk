@@ -220,7 +220,6 @@ function euler(){
             }else if (i % 3 == 0){
                 total += i;
             }
-    console.log(total);
 }}
 
 euler()
@@ -487,3 +486,68 @@ function getLongestWord(arrayOfWords){
 }
 
 getLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"])
+
+// ### I. `transmogrify`
+
+// Write a Javascript function called `transmogrify`. This function should accept three arguments, which you can assume will be numbers. Your function should return the "transmogrified" result.
+
+// The transmogrified result of three numbers is the product of the first two numbers, raised to the power of the third number.
+
+// For example, the transmogrified result of 5, 3, and 2 is `(5 times 3) to the
+// power of 2` is 225.
+
+function transmogrify(num1,num2,num3) {
+    return (num1 * num2) ** num3
+}
+console.log(transmogrify(5, 3, 2));
+
+// ### J. `reverseWordOrder` v2
+
+// **Without using `.split()`, `.reverse()`, or `.join()`,** write a function `reverseWordOrder` that accepts a single argument, a string. The function should return a string with the order of the words reversed. Don't worry about punctuation. 
+
+// See if you can do it without googling.
+
+// Remember: Jim showed you today that you can index directly into a string: 
+// ```js
+// "hello world"[6]
+// ```
+// > `=> "w"`
+
+// That and basic loops and variables and arrays are all you need to solve this without the Array methods.
+
+// ```javascript
+// console.log(reverseWordOrder("Ishmael me Call"));
+// ```
+// > `=> "Call me Ishmael"`
+
+// ```js
+// console.log(reverseWordOrder("I use Lâncome on my comb"));
+// ```
+// > `=> "comb my on Lâncome use I"`
+
+"Wait what? Without using split?"
+
+// ### K. Get down and dirty with `Math.random()`
+
+// 1.  Write a function that will return a random integer between 1 and 10. Test it.
+
+console.log(Math.floor(Math.random()*10));
+// 2.  Write a function that will return a random integer between 10 and 100. Test it.
+
+console.log(Math.floor(Math.random()*90)+10);
+
+
+// 3.  Write a function that will return a random number between 532 and 13267. Test it.
+
+console.log(Math.floor(Math.random()*(13267-532))+532);
+// 4.  Write a function that will return a random number between 1 and 10. Test it.
+console.log(Math.random()*10);
+// 5.  Add a few more quotes to the quotes array from question III-B-1 above. Write a function that will take an array as a parameter, and return a random element from that array.  Call your function a few times, passing in the quotes array.  Give it a nice semantic name like `getRandomElement`.
+
+var quotes2 = ["Rice is great if you're really hungry and want to eat two thousand of something.","The depressing thing about tennis is that no matter how good I get, I'll never be as good as a wall.","I find that ducks' opinion of me is very much influenced by whether or not I have bread.","My belt holds up my pants and my pants have belt loops that hold up the belt. What the fuck's really going on down there? Who is the real hero? ",'I like escalators, because an escalator can never break; it can only become stairs. There would never be an "Escalator Temporarily Out of Order" sign. Only an "Escalator Temporarily Stairs... Sorry for the Convenience."']
+
+function mitchHedbergQuoteGenerator(array34){
+    console.log(array34[Math.floor(Math.random()*array34.length)]);
+}
+
+mitchHedbergQuoteGenerator(quotes2)
