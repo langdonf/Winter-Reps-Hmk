@@ -551,3 +551,25 @@ function mitchHedbergQuoteGenerator(array34){
 }
 
 mitchHedbergQuoteGenerator(quotes2)
+
+// ## Objects
+
+// Let's set up an object data structure. Let's say we have a website that sells products, and we have a user of our website, and we want to store that user's data. The object data structure is a good way to organize the data from our user.
+
+// ### A. Make a user object
+
+// 1. Create an object called `user`.
+// 2. Write in to the object the key-value pairs for `name`, `email`, `age`, and `purchased`. Set the value of `purchased` to an empty array `[]`. Set the other values to whatever you would like.
+
+var user = {
+    name = "Langdon",
+    email = "lfroker@gmail.com",
+    age = 30,
+    purchased = []
+};
+
+user.email = "lfroker@yahoo.com";
+
+user.age++
+
+
