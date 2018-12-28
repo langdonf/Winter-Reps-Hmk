@@ -266,3 +266,20 @@ ourClass[4] = "Octocat"
 ourClass.push("Cloud City")
 
 console.log(ourClass);
+
+// ### E. Mix It Up
+
+// Given the following array: `const myArray = [5, 10, 500, 20]`
+const myArray = [5, 10, 500, 20]
+// 1. Add the string `"Egon"` to the end of the array. Add another string of your choice to the end of the array.
+myArray.push('Egon')
+myArray.push('Cat')
+// 2. Remove the `5` from the beginning of the array.
+// 3. Add the string `"Bob Marley"` to the beginning of the array.
+myArray.splice(0,1)
+// 4. Remove the string of your choise from the end of the array.
+myArray.pop()
+// 5. Reverse this array using `Array.prototype.reverse()`.  Did you mutate the array? What does _mutate_ mean? Did the `.reverse()` method return anything?
+myArray.reverse()
+'Yes, it reversed it'
+console.log(myArray);
