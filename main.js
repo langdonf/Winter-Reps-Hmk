@@ -625,3 +625,11 @@ user.friend.purchased.push('A latte')
 // 7. Console.log just "A latte" from the friend's `purchased` array.
 
 console.log(user.friend.purchased[1]);
+
+user.purchased.forEach(element => {
+    console.log(element);
+});
+
+user.friend.purchased.forEach(element => {
+    console.log(element);
+});
