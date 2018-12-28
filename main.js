@@ -458,3 +458,17 @@ function getMultipleLengths(arrayOfStrings){
 }
 
 getMultipleLengths(["hello", "what", "is", "up", "dude"])
+
+// ### G. `maxOfThree`
+
+// Define a function `maxOfThree` that takes three numbers as arguments and returns the largest of them. If all numbers are the same, it doesn't matter which one is returned. If the two largest numbers are the same, one of them should be returned.
+
+function maxOfThree(one,two,three){
+    if(one>=two && one>=three){
+        console.log(one);
+    } else if(one<=two && one >=three){
+        console.log(two);
+    } else {
+        console.log(three);
+    }
+}
