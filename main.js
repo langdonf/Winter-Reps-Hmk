@@ -114,16 +114,18 @@ for (let i = 0; i <= 10; i++) {
     console.log(i);
 }
 // 2. Write a loop that will print out all the numbers from 10 up to and including 400.
-for (let i = 10; i <= 400; i++) {
-    console.log(i);
-}
+
+// for (let i = 10; i <= 400; i++) {
+//     console.log(i);
+// }
+
 // 3. Write a loop that will print out every third number starting with 12 and going no higher than 4000.
 
-for (let i = 12; i <= 4000; i++) {
-    if (i % 3 == 0){
-    console.log(i);
-    }
-}
+// for (let i = 12; i <= 4000; i++) {
+//     if (i % 3 == 0){
+//     console.log(i);
+//     }
+// }
 
 // ### B. Get even
 
@@ -148,7 +150,10 @@ for (let i = 0; i < 101; i++) {
         console.log(`I found a ${i}. High five!`);
     } else if (i % 3 == 0 && i != 0){
         console.log((`I found a ${i}. Three is a crowd.`));
+    } else {
+        console.log(i);
     }
+
 }
 // >Example Output:
 // ```
@@ -166,3 +171,31 @@ for (let i = 0; i < 101; i++) {
 // I found a 9. Three is a crowd
 // I found a 10. High five!
 // ```
+
+// ### D. Savings account
+
+// 1. Write code that will save the sum of all the numbers between 1 - 10 to a variable called `bank_account`.
+
+function bank_account(){
+    var total = 0;
+    for (let i = 0; i <= 10; i++) {
+        total += i
+    };
+    console.log(total);
+}
+bank_account();
+
+// >Check your work! Your banck_account should have $55 in it.
+
+// 2. You got a bonus! Your pay is now doubled each week. Write code that will save the sum of all the numbers between 1 - 100 multiplied by 2.
+
+// >Check your work! Your banck_account should have $10,100 in it.
+
+function bank_account2(){
+    var total = 0;
+    for (let i = 0; i <= 100; i++) {
+        total += i * 2
+    };
+    console.log(total);
+}
+bank_account2();
