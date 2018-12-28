@@ -410,7 +410,10 @@ console.log(printCool('Ironman'));
 
 // > => 125
 
-
+function calcCube(sideLength) {
+    return sideLength ** 3    
+}
+console.log(calcCube(3));
 
 // ### D. `isVowel`
 
