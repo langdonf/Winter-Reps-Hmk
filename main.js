@@ -562,7 +562,7 @@ mitchHedbergQuoteGenerator(quotes2)
 // 2. Write in to the object the key-value pairs for `name`, `email`, `age`, and `purchased`. Set the value of `purchased` to an empty array `[]`. Set the other values to whatever you would like.
 
 var user = {
-    name: "Langdon",
+    name: "langdon",
     email: "lfroker@gmail.com",
     age: 30,
     purchased: []
@@ -633,3 +633,25 @@ user.purchased.forEach(element => {
 user.friend.purchased.forEach(element => {
     console.log(element);
 });
+
+// ### G. Functions can operate on objects
+
+// 1. Write a single function `updateUser` that takes no parameters. When the function is run, it should:
+
+//   - it should increment the user's age by 1
+//   - make the user's name uppercase
+function updateUser(){
+    user.age ++
+    user.name.charAt(0).toUpperCase()
+}
+//   The function does not need a `return` statement, it will merely modify the user object.
+
+// 2. Write a function `oldAndLoud` that performs the exact same tasks as `updateUser`, but instead of hard-coding it to only work on our `user` object, make it take a parameter `person`, and have it modify the object that is passed in as an argument when the function is called. Call your `oldAndLoud` function with `user` as the argument. 
+
+function oldAndLoud(person){
+    person.age ++
+    person.name[0].toUpperCase()
+}
+
+oldAndLoud(user);
+console.log(user);
