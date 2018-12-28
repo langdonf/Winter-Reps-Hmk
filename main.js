@@ -224,3 +224,33 @@ function euler(){
 }}
 
 euler()
+
+// ## III. Arrays & Control flow
+
+// ### A. Talk about it:
+
+// 1. What are the things in an array called?
+'elements'
+// 2. Do Arrays guarantee those things will be in order?
+'no'
+// 3. What real-life thing could you model with an array?
+'grocery list'
+
+// ### B. Easy Does It
+
+// 1. Create an array that contains three quotes and store it in a variable called `quotes`.
+
+var quotes = ["Rice is great if you're really hungry and want to eat two thousand of something.","The depressing thing about tennis is that no matter how good I get, I'll never be as good as a wall.","I find that ducks' opinion of me is very much influenced by whether or not I have bread."]
+
+// ### C. Accessing elements
+
+// Given the following array `const randomThings = [1, 10, "Hello", true]`
+const randomThings = [1, 10, "Hello", true]
+// 1. How do you access the 1st element in the array?
+randomThings[0];
+// 2. Change the value of `"Hello"` to `"World"`.
+randomThings[2] = "World"
+// 3. Check the value of the array to make sure it updated the array.  How?  Why, yes! `console.log()`;
+
+console.log(randomThings);
+
