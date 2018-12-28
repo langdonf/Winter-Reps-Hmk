@@ -44,3 +44,24 @@ secondVariable = 'any string'
 var yourName = 'Langdon Froker'
 console.log(`Hello, my name is ${yourName}`);
 // >ex: `Hello, my name is Jean Valjean`
+
+// ### C. Booleans
+// - Using the provided variable definitions, replace the blanks so that all log statements print `true` in the console. Answers should be all be valid JS syntax and not weird things that don't make sense but happen to print `true` to the console.
+
+//js
+const a = 4;
+const b = 53;
+const c = 57;
+const d = 16;
+const e = 'Kevin';
+
+console.log(a > b);
+console.log(c != d);
+console.log('Name' === 'Name');
+console.log(true || false);
+console.log(false && false || false == false && false || false || true);
+console.log(false == false)
+console.log(e == 'Kevin');
+console.log(a + b == c);
+console.log(a * a == d);
+console.log(48 == '48');
